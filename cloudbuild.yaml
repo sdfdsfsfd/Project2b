@@ -1,12 +1,12 @@
 steps:
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'us-east1-docker.pkg.dev/model-hexagon-459409-q3/tesrepos/test:1', '.']
+    args: ['build', '-t', 'us-central1-docker.pkg.dev/model-hexagon-459409-q3/tesrepos/test:1', '.']
 
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'us-east1-docker.pkg.dev/model-hexagon-459409-q3/tesrepos/test:1']
+    args: ['push', 'us-central1-docker.pkg.dev/model-hexagon-459409-q3/tesrepos/test:1']
 
 images:
-  - 'us-east1-docker.pkg.dev/model-hexagon-459409-q3/tesrepos/test:1'
+  - 'us-central1-docker.pkg.dev/model-hexagon-459409-q3/tesrepos/test:1'
 logsBucket: 'gs://testsssssss12'
 options:
   logging: GCS_ONLY
