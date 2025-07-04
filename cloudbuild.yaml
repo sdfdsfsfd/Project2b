@@ -7,5 +7,6 @@ steps:
 
 images:
   - 'us-east1-docker.pkg.dev/model-hexagon-459409-q3/tesrepos/test:1'
-
-logging: NONE
+logsBucket: 'gs://testsssssss12'
+options:
+  logging: GCS_ONLY
