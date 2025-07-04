@@ -3,12 +3,12 @@ FROM node:24-slim
 
 
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends \
+    apt-get install -y --no-install-recommends && \
         
-    && apt-get purge -y zlib1g zlib1g-dev \
-    && apt-get autoremove -y \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
+     apt-get purge -y zlib1g zlib1g-dev \
+     apt-get autoremove -y && \
+     apt-get clean && \
+     rm -rf /var/lib/apt/lists/*
 
 
 
