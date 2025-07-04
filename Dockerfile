@@ -1,8 +1,15 @@
 FROM node:24-slim
 
 
-RUN apt-get purge -y zlib1g-dev && \
-    find / -name '*minizip*' -exec rm -rf {} + || true
+
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+        curl \
+    && apt-get purge -y zlib1g zlib1g-dev \
+    && apt-get autoremove -y \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
 
 
 WORKDIR /usr/src/app
