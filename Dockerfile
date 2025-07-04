@@ -1,5 +1,4 @@
 FROM node:24-slim
-FROM debian:bullseye
 
 # Install build dependencies
 RUN apt-get update && apt-get install -y \
