@@ -4,7 +4,7 @@ FROM node:24-slim
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
-        curl \
+        
     && apt-get purge -y zlib1g zlib1g-dev \
     && apt-get autoremove -y \
     && apt-get clean \
