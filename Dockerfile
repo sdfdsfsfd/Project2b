@@ -7,7 +7,7 @@
 # CMD ["node", "server.js"]
 
 # Use Ubuntu 22.04 LTS as the base image
-FROM ubuntu:24.04.2
+FROM ubuntu:24.04
 
 # Set environment variables to avoid user interaction during installation
 ENV DEBIAN_FRONTEND=noninteractive
