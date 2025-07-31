@@ -38,7 +38,7 @@
 # CMD ["node", "server.js"]
 
 # -------- Stage 1: Build Stage --------
-FROM ubuntu:24.04.2 AS build
+FROM ubuntu:24.04 AS build
 
 ENV DEBIAN_FRONTEND=noninteractive
     
